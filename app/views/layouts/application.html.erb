@@ -2,6 +2,8 @@
 <html>
   <head>
     <title>La Poire en Deux</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <%= csrf_meta_tags %>
     <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico">
     <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cuprum:400,700">
@@ -10,124 +12,253 @@
   </head>
 
   <body>
-    <p class="navbar-text pull-right">
-    </p>
-    <% if notice %>
-      <p class="alert alert-success"><%= notice %></p>
-    <% end %>
-    <% if alert %>
-      <p class="alert alert-danger"><%= alert %></p>
-    <% end %>
-            <!--BEGIN PAGE LOADER-->
-            <div class="body-wrapper">
-                <!-- MENU MOBILE BACKGROUND-->
-                <div class="wrapper-menu-mobile-background"></div>
-                <!-- MENU MOBILE-->
-                <div class="wrapper-menu-mobile">
-                    <div class="mb-social-wrapper">
-                        <div class="mb-socials">
-                            <ul class="list-unstyled list-inline">
-                                <li><a href="https://www.facebook.com/PoireEnDeux/?fref=ts" class="link facebook"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="https://twitter.com/LaPoireEnDeux" class="link twitter"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#" class="link google"><i class="fa fa-google"></i></a></li>
-                                <li><a href="#" class="link instagram"><i class="fa fa-linkedin"></i></a></li>
-                            </ul>
-                        </div>
-                        <div class="mb-button-close"><i class="icons fa fa-times"></i></div>
-                        <div class="clearfix"></div>
+        <!--BEGIN PAGE LOADER-->
+        <div class="body-wrapper">
+            <!-- MENU MOBILE BACKGROUND-->
+            <div class="wrapper-menu-mobile-background"></div>
+            <!-- MENU MOBILE-->
+            <div class="wrapper-menu-mobile">
+                <div class="mb-social-wrapper">
+                    <div class="mb-socials">
+                        <ul class="list-unstyled list-inline">
+                            <li><a href="https://www.facebook.com/PoireEnDeux/?fref=ts" class="link facebook"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="https://twitter.com/LaPoireEnDeux" class="link twitter"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#" class="link google"><i class="fa fa-google"></i></a></li>
+                            <li><a href="#" class="link instagram"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
                     </div>
-                    <div class="mb-login-wrapper">
-                        <div class="mb-guest-wrapper">
-                            <div class="mb-avatar">
-                                <div class="mb-avatar-container"><img src="assets/images/more-image/avatar.png" alt="" class="img-responsive" /></div>
+                    <div class="mb-button-close"><i class="icons fa fa-times"></i></div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="mb-login-wrapper">
+                    <div class="mb-guest-wrapper">
+                        <div class="mb-avatar">
+                            <div class="mb-avatar-container"><img src="assets/images/more-image/avatar.png" alt="" class="img-responsive" /></div>
+                        </div>
+                        <div class="mb-name"><a href="#" class="link">Sign in</a></div>
+                    </div>
+                </div>
+                <ul class="nav navbar-nav mb-nav">
+                    <li class="dropdown"><a href="index.html" class="main-menu"><span class="text">Accueil</span></a><span class="icons-dropdown"><i class="fa fa-angle-right"></i></span>
+                        <ul class="mb-menu-dropdown">
+                            <li><a href="index.html" class="sub-menu"><span class="text">Homepage 01</span></a></li>
+                            <li><a href="homepage-2.html" class="sub-menu"><span class="text">Homepage 02</span></a></li>
+                            <li><a href="homepage-3.html" class="sub-menu"><span class="text">Homepage 03</span></a></li>
+                        </ul>
+                    </li>
+                    <li><a href="leprojet.html" class="main-menu"><span class="text">Le projet</span></a></li>
+                    <li><a href="shop.html" class="main-menu"><span class="text">Boutique</span></a></li>
+                    <li class="dropdown"><a href="blog.html" class="main-menu"><span class="text">blog</span></a><span class="icons-dropdown"><i class="fa fa-angle-right"></i></span>
+                        <ul class="mb-menu-dropdown">
+                            <li><a href="blog.html" class="sub-menu"><span class="text">blog</span></a></li>
+                            <li><a href="blog-left-sidebar.html" class="sub-menu"><span class="text">blog left sidebar</span></a></li>
+                            <li><a href="blog-detail.html" class="sub-menu"><span class="text">blog detail</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a href="javascript:void(0)" class="main-menu"><span class="text">pages</span></a><span class="icons-dropdown"><i class="fa fa-angle-right"></i></span>
+                        <ul class="mb-menu-dropdown">
+                            <li><a href="404.html" class="sub-menu"><span class="text">page 404</span></a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html" class="main-menu"><span class="text">contact</span></a></li>
+                </ul>
+            </div>
+            <!-- SEARCH MOBILE-->
+            <div class="wrapper-search-mobile">
+                <div class="mb-social-wrapper">
+                    <div class="mb-button-close"><i class="icons fa fa-times"></i></div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="mb-search">
+                    <form><input type="text" placeholder="Search" onfocus="this.placeholder = ''" class="searchbox" />
+                        <div class="line-boder"></div><button type="submit" class="searchbutton fa fa-search"></button></form>
+                </div>
+            </div>
+            <!-- WRAPPER CONTENT-->
+            <div class="wrapper-content">
+                <!-- HEADER-->
+                <header>
+                    <div class="bg-transparent">
+                        <div class="header-topbar">
+                            <div class="container">
+                                <ul class="topbar-left list-unstyled pull-left">
+                                    <li>
+                                        <a href="javascript:void(0)" class="link"> <i class="icons fa fa-circle"></i><span>Order Online</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)" class="link"> <i class="icons-2 fa fa-clock-o"></i><span>07:30 am - 11:00 pm</span></a>
+                                    </li>
+                                </ul>
+                                <ul class="topbar-right list-unstyled list-inline style-2">
+                                    <li>
+                                        <a href="#" class="link"> <i class="icons-2 fa fa-user"></i><span>mon compte</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="link"> <i class="icons-2 fa fa-cart-plus"></i><span class="cart-counter">1</span></a>
+                                    </li>
+                                </ul>
                             </div>
-                            <div class="mb-name"><a href="#" class="link">Sign in</a></div>
                         </div>
-                    </div>
-                    <ul class="nav navbar-nav mb-nav">
-                        <li class="dropdown"><a href="index.html" class="main-menu"><span class="text">Accueil</span></a><span class="icons-dropdown"><i class="fa fa-angle-right"></i></span>
-                        </li>
-                        <li><a href="leprojet.html" class="main-menu"><span class="text">Le projet</span></a></li>
-                        <li><a href="shop.html" class="main-menu"><span class="text">Boutique</span></a></li>
-                        <li class="dropdown"><a href="blog.html" class="main-menu"><span class="text">blog</span></a><span class="icons-dropdown"><i class="fa fa-angle-right"></i></span>
-                            <ul class="mb-menu-dropdown">
-                                <li><a href="blog.html" class="sub-menu"><span class="text">blog</span></a></li>
-                                <li><a href="blog-left-sidebar.html" class="sub-menu"><span class="text">blog left sidebar</span></a></li>
-                                <li><a href="blog-detail.html" class="sub-menu"><span class="text">blog detail</span></a></li>
-                            </ul>
-                        </li>
-                        <li class="dropdown"><a href="javascript:void(0)" class="main-menu"><span class="text">pages</span></a><span class="icons-dropdown"><i class="fa fa-angle-right"></i></span>
-                            <ul class="mb-menu-dropdown">
-                                <li><a href="404.html" class="sub-menu"><span class="text">page 404</span></a></li>
-                            </ul>
-                        </li>
-                        <li><a href="contact.html" class="main-menu"><span class="text">contact</span></a></li>
-                    </ul>
-                </div>
-                <!-- SEARCH MOBILE-->
-                <div class="wrapper-search-mobile">
-                    <div class="mb-social-wrapper">
-                        <div class="mb-button-close"><i class="icons fa fa-times"></i></div>
-                        <div class="clearfix"></div>
-                    </div>
-                    <div class="mb-search">
-                        <form><input type="text" placeholder="Search" onfocus="this.placeholder = ''" class="searchbox" />
-                            <div class="line-boder"></div><button type="submit" class="searchbutton fa fa-search"></button></form>
-                    </div>
-                </div>
-                <!-- WRAPPER CONTENT-->
-                <div class="wrapper-content">
-                    <!-- HEADER-->
-                    <header>
-                        <div class="bg-transparent">
-                            <div class="header-topbar">
-                                <div class="container">
-                                    <ul class="topbar-left list-unstyled pull-left">
-                                        <li>
-                                            <a href="javascript:void(0)" class="link"> <i class="icons fa fa-circle"></i><span>Order Online</span></a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0)" class="link"> <i class="icons-2 fa fa-clock-o"></i><span>07:30 am - 11:00 pm</span></a>
-                                        </li>
-                                    </ul>
-                                    <ul class="topbar-right list-unstyled list-inline style-2">
-                                      <% if user_signed_in? %>
-                                        <li>
-                                          <a href="<%= edit_user_registration_path %>" class="link"> <i class="icons-2 fa fa-user"></i><span>Mon compte : <%= current_user.email %></span></a>
-                                        </li>
-                                        <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
-                                      <% else %>
-                                        <li>
-                                          <a href="<%= new_user_registration_path %>" class="link"> <i class="icons-2 fa fa-user"></i><span>S'enregistrer</span></a>
-                                        </li>
-                                        <a href="<%= new_user_session_path %>" class="link"> <i class="icons-2 fa fa-user"></i><span>Se connecter</span></a>
-                                      <% end %>
-                                        <li>
-                                            <a href="#" class="link"> <i class="icons-2 fa fa-cart-plus"></i><span class="cart-counter">1</span></a>
-                                        </li>
-                                    </ul>
+                        <div class="header-main">
+                            <div class="container">
+                                <div class="header-main-wrapper">
+                                    <div class="hamburger-menu-mobile"><i class="icons fa fa-bars"></i></div>
+                                    <nav class="navigation">
+                                        <ul class="nav-links nav navbar-nav">
+                                            <li class="dropdown active"><a href="javascript:void(0)" class="main-menu"><span class="text">Acceuil</span></a>
+                                                <ul class="menu-dropdown">
+                                                    <li><a href="index.html" class="sub-menu"><span class="text">Homepage 01</span></a></li>
+                                                    <li><a href="homepage-2.html" class="sub-menu"><span class="text">Homepage 02</span></a></li>
+                                                    <li><a href="homepage-3.html" class="sub-menu"><span class="text">Homepage 03</span></a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="about.html" class="main-menu"><span class="text">A propos</span></a></li>
+                                            <li><a href="shop.html" class="main-menu"><span class="text">Boutique</span></a></li>
+                                            <li><a href="contact.html" class="main-menu"><span class="text">contact</span></a></li>
+                                        </ul>
+                                        <div class="button-search">
+                                            <p class="main-menu"><i class="fa fa-search"></i></p>
+                                        </div>
+                                        <div class="nav-search hide">
+                                            <form><input type="text" placeholder="Search" class="searchbox" /><button type="submit" class="searchbutton fa fa-search"></button></form>
+                                        </div>
+                                    </nav>
+                                    <div class="button-search-mobile"><i class="icons fa fa-search"></i></div>
+                                    <div class="clearfix"></div>
                                 </div>
                             </div>
-                            <div class="header-main">
+                        </div>
+                    </div>
+                </header>
+                <div class="main-contents">
+                    <%= yield %>
+                </div>
+                <footer>
+                    <div class="footer">
+                        <!--<div class="subscribe-email">
+                            <div class="subscribe-email-wrapper">
+                                <div class="subscribe-email-left">
+                                    <p class="subscribe-email-title"><strong>Subscribe</strong> to our special offers</p>
+                                    <p class="subscribe-email-text">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui fficia runt sedwsa.</p>
+                                </div>
+                                <div class="subscribe-email-right">
+                                    <form>
+                                        <div class="input-group form-subscribe-email"><input type="text" placeholder="Type Your Email" class="form-control" /><span class="input-group-btn"><button type="submit" class="btn-email"></button></span></div>
+                                    </form>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>-->
+                        <div class="footer-wrapper">
+                            <div class="footer-main">
                                 <div class="container">
-                                    <div class="header-main-wrapper">
-                                        <div class="hamburger-menu-mobile"><i class="icons fa fa-bars"></i></div>
-                                        <nav class="navigation">
-                                            <ul class="nav-links nav navbar-nav">
-                                                <li class="dropdown active"><a href="javascript:void(0)" class="main-menu"><span class="text">Acceuil</span></a>
-                                                </li>
-                                                <li><a href="about.html" class="main-menu"><span class="text">A propos</span></a></li>
-                                                <li><a href="shop.html" class="main-menu"><span class="text">Boutique</span></a></li>
-                                                <li><a href="contact.html" class="main-menu"><span class="text">contact</span></a></li>
-                                            </ul>
-                                        </nav>
+                           <!--      <h1 class="title-footer">la Poire en Deux</h1>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2829.5550409634393!2d-0.5643154847763577!3d44.830628783515216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd55264aa7042fd5%3A0xbf74f9f084708538!2s1+Rue+Jacques+Ellul%2C+33800+Bordeaux!5e0!3m2!1sfr!2sfr!4v1490806239607" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe> -->
+                                <h3 class="contact1" width="200px" height="200px">Nous Contacter</h3>
+                                <br>
+                               <h4>1 rue Jacques Ellul, 33000 Bordeaux</h4>
+                               <a href="mailto:lapoireendeux@gmail.com?Subject=Responsive%20Resume">lapoireendeux@gmail.com</a>
+                               </div></div></div></div>
+                                 <!--<a href="index.html" class="footer-logo"><img src="assets/images/logo/footer.jpg" alt="" class="img-responsive" width="1600px" height="1600px" /></a>-->
+                                 <!--<div class="footer-main-wrapper">
+                                        <div class="row">
+                                            <div class="col-2">
+                                                <div class="col-md-3 col-xs-6">
+                                                    <div class="gamba-info widget">
+                                                        <div class="title">Contact us</div>
+                                                        <div class="content-widget">
+                                                            <ul class="list-unstyled info-list">
+                                                                <li><i class="icons fa fa-map-marker"></i><a href="#" class="link">416 Ridge Road, Pratt, KS 67124</a></li>
+                                                                <li><i class="icons fa fa-phone"></i><a href="#" class="link link-2">(+1) 090-016-679 <br> (+1) 092-552-179</a></li>
+                                                                <li><i class="icons fa fa-envelope-o"></i><a href="#" class="link">hello@gamba.com</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-xs-6">
+                                                    <div class="gamba-service widget">
+                                                        <div class="title">our service</div>
+                                                        <div class="content-widget">
+                                                            <ul class="list-unstyled">
+                                                                <li> <a href="#" class="link">Social media monitoring</a></li>
+                                                                <li> <a href="#" class="link">Web & App solution</a></li>
+                                                                <li> <a href="#" class="link">Creative process</a></li>
+                                                                <li> <a href="#" class="link">Sofware Development</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-2">
+                                                <div class="col-md-3 col-xs-6">
+                                                    <div class="gamba-twitter widget">
+                                                        <div class="title">twitter widget</div>
+                                                        <div class="content-widget">
+                                                            <div class="twitter-wrapper">
+                                                                <div class="text">Looking for awesome PSD template?</div>
+                                                                <div class="link">Find it here: <a href="#">http://tf.net/gamba</a></div>
+                                                                <div class="time-post"><i class="fa fa-twitter"></i><span> 01 day ago</span></div>
+                                                            </div>
+                                                            <div class="twitter-wrapper">
+                                                                <div class="text">You need an image stock</div>
+                                                                <div class="link">Find it here: <a href="#">http://tf.net/gamba</a></div>
+                                                                <div class="time-post"><i class="fa fa-twitter"></i><span> 01 day ago</span></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-xs-6">
+                                                    <div class="gamba-gallery widget">
+                                                        <div class="title">gallery</div>
+                                                        <div class="content-widget">
+                                                            <ul class="list-unstyled list-inline">
+                                                                <li>
+                                                                    <a href="assets/images/products/thumbnail-1.jpg" data-fancybox-group="gallery2" class="thumb fancybox"><img src="assets/images/products/thumbnail-1.jpg" alt="gallery image 1" class="img-full" /></a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="assets/images/products/thumbnail-2.jpg" data-fancybox-group="gallery2" class="thumb fancybox"><img src="assets/images/products/thumbnail-2.jpg" alt="gallery image 2" class="img-full" /></a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="assets/images/products/thumbnail-3.jpg" data-fancybox-group="gallery2" class="thumb fancybox"><img src="assets/images/products/thumbnail-3.jpg" alt="gallery image 3" class="img-full" /></a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="assets/images/news/image-2.jpg" data-fancybox-group="gallery2" class="thumb fancybox"><img src="assets/images/news/image-2.jpg" alt="gallery image 4" class="img-full" /></a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="assets/images/news/image-3.jpg" data-fancybox-group="gallery2" class="thumb fancybox"><img src="assets/images/news/image-3.jpg" alt="gallery image 5" class="img-full" /></a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="assets/images/news/image-4.jpg" data-fancybox-group="gallery2" class="thumb fancybox"><img src="assets/images/news/image-4.jpg" alt="gallery image 6" class="img-full" /></a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="hyperlink">
+                                <div class="container">
+                                    <div class="name-company pull-left">&copy; Designed by GAMBA.</div>
+                                    <div class="social-footer pull-right">
+                                        <ul class="list-inline list-unstyled">
+                                            <li><a href="#" class="link facebook"><i class="fa fa-facebook"></i></a></li>
+                                            <li><a href="#" class="link twitter"><i class="fa fa-twitter"></i></a></li>
+                                            <li><a href="#" class="link pinterest"><i class="fa fa-pinterest-p"></i></a></li>
+                                            <li><a href="#" class="link google"><i class="fa fa-google"></i></a></li>
+                                            <li><a href="#" class="link instagram"><i class="fa fa-instagram"></i></a></li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </header>
-                    <!-- MAIN CONTENT-->
-                    <div class="main-contents">
-    <%= yield %>
+                    </div>-->
+                </footer>
+                <!-- BUTTON BACK TO TOP-->
+                <div id="back-top"><a href="#top" class="link"><i class="fa fa-angle-double-up"></i></a></div>
+            </div>
+        </div>
   </body>
 </html>

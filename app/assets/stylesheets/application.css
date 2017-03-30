@@ -10,6 +10,19 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
- *= require_tree .
- *= require_self
+ *= require bootstrap/css/bootstrap.min.css
+ *= require font-icon/font-awesome/css/font-awesome.css
+ *= require font-icon/font-oganic/flaticon.css
+ *= require bootstrap-timepicker/jquery.timepicker.css
+ *= require bootstrap-datepicker/css/bootstrap-datepicker.min.css
+ *= require animate/animate.css
+ *= require slick-slider/slick.css
+ *= require slick-slider/slick-theme.css
+ *= require fancybox/css/jquery.fancybox.css
+ *= require fancybox/css/jquery.fancybox-buttons.css
+ *= require fancybox/css/jquery.fancybox-thumbs.css
+ *= require gamba/layout.css
+ *= require gamba/components.css
+ *= require gamba/responsive.css
+ *= require style.css
  */

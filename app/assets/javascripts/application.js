@@ -13,4 +13,15 @@
 //= require jquery
 //= require jquery_ujs
 //= require twitter/bootstrap
+//= require bootstrap-timepicker/jquery.timepicker.min.js
+//= require bootstrap-datepicker/js/bootstrap-datepicker.min.js
+//= require smooth-scroll/jquery-smoothscroll.min.js
+//= require wow-js/wow.min.js
+//= require slick-slider/slick.min.js
+//= require isotope/isotope.pkgd.min.js
+//= require fancybox/js/jquery.fancybox.min.js
+//= require fancybox/js/jquery.fancybox-buttons.min.js
+//= require fancybox/js/jquery.fancybox-thumbs.min.js
+//= require parallax/jquery.parallax-scroll.min.js
+//= require gamba/main.js
 //= require_tree .
