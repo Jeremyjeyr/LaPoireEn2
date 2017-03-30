@@ -2,7 +2,7 @@
 <h1>Nom du produit</h1>
 
 
-<%= simple_form_for order_path do |f|%>
+<%= simple_form_for farm_add_product_path[@farm, product] do |f|%>
   <%= f.number_field :quantity, value: 1, min: 1, max: :avalaible_stock %>
   <%= f.submit "Ajouter au panier"%>
 <%end%>

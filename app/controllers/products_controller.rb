@@ -18,10 +18,15 @@ class ProductsController < ApplicationController
   end
 
   def add_to
+    @this_product = Product.find(params[:id])
     @order = Order.new
-    @order.user_id = current_user.id
-    @order.farm_id = product.farm_id
+    @order.user = current_user
+    @order.farm = @this_product.farm
+    @order.content = @this_product.name + " x" + @this_product.quantity.to_s
+    @order.save
+    redirect_to @order
   end
+
   # GET /products/1/edit
   def edit
   end
