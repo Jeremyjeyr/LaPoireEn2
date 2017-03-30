@@ -13,7 +13,7 @@
 
 class Order < ApplicationRecord
 
-  enum status: [:accepted :refused]
+  enum status: [:accepted, :refused]
 
   #orders.refused
   #orders.cancelled
