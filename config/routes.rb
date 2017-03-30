@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-	root 'static#index'
+  root 'pages#home'
 
   resources :orders
   resources :products
