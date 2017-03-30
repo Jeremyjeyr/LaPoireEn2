@@ -11,6 +11,30 @@
     </div>
   <% end %>
 
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+
+  <%= f.label :background_image %>
+  <%= f.text_field :background_image %>
+
+  <%= f.label :address %>
+  <%= f.text_field :address %>
+
+  <%= f.label :phone %>
+  <%= f.text_field :phone %>
+
+  <%= f.label :description %>
+  <%= f.text_area :description %>
+
+  <%= f.label :open_hours %>
+  <%= f.text_field :open_hours %>
+
+  <%= f.label :orders_days %>
+  <%= f.datetime_local_field  :orders_days %>
+
+  <%= f.label :delivery_days%>
+  <%= f.datetime_local_field :delivery_days %>
+
   <div class="actions">
     <%= f.submit %>
   </div>
