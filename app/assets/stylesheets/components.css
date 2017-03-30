@@ -2648,10 +2648,10 @@
 }
 
 .about-us-wrapper .about-right {
-    float: right;
-
-    width: 27%;
+    float: none;
+    width: 23%;
     padding-left: 15px;
+    display: inline-block;
 }
 
 .about-us-wrapper .about-left {
