@@ -25,4 +25,3 @@
 //= require parallax/jquery.parallax-scroll.min.js
 //= require gamba/main.js
 //= require gamba/main.min.js
-
