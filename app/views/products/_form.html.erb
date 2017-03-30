@@ -11,7 +11,13 @@
     </div>
   <% end %>
 
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+  <%= simple_form_for @product do |f| %>
+      <%= f.input :name %>
+      <%= f.input :image %>
+      <%= f.input :price %>
+      <%= f.input :farm_id %>
+      <div class="actions">
+        <%= f.submit %>
+      </div>
+  <% end %>
 <% end %>

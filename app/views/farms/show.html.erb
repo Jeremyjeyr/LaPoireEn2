@@ -4,6 +4,14 @@
 <p><%= @farm.description%><p>
 <p>Numéro de téléphone : <%= @farm.phone %></p>
 <p>Adresse : <%= @farm.address %></p>
+<div>
+  <% @farm.products(@farm.id).each do |product| %>
+  <p><%= product.name %><p>
+  <%= link_to 'Modifier le produit', edit_product_path(product) %>
+  <%end%>
+</div>
 
-<%= link_to 'Edit', edit_farm_path(@farm) %> |
+<%= link_to 'Ajouter un produit', new_product_path(@farm_products) %>
+
+<%= link_to 'Edit', edit_farm_path(@farm) %>
 <%= link_to 'Back', farms_path %>
