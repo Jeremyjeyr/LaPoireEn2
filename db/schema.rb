@@ -27,7 +27,7 @@ ActiveRecord::Schema.define(version: 20170330092539) do
 
   create_table "orders", force: :cascade do |t|
     t.float    "total"
-    t.string   "status"
+    t.integer  "status"
     t.text     "message"
     t.date     "date"
     t.datetime "created_at", null: false
