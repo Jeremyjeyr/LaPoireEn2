@@ -10,6 +10,8 @@ class FarmsController < ApplicationController
   # GET /farms/1
   # GET /farms/1.json
   def show
+    @products = Product.all
+    @farm_products = @farm.products(@farm.id).each
   end
 
   # GET /farms/new
