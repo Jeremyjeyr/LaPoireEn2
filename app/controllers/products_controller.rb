@@ -17,6 +17,11 @@ class ProductsController < ApplicationController
     @product = Product.new
   end
 
+  def add_to
+    @order = Order.new
+    @order.user_id = current_user.id
+    @order.farm_id = product.farm_id
+  end
   # GET /products/1/edit
   def edit
   end
