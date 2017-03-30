@@ -1,4 +1,9 @@
 <p id="notice"><%= notice %></p>
 
+<h1><%= @farm.title %></h1>
+<p><%= @farm.description%><p>
+<p>Numéro de téléphone : <%= @farm.phone %></p>
+<p>Adresse : <%= @farm.address %></p>
+
 <%= link_to 'Edit', edit_farm_path(@farm) %> |
 <%= link_to 'Back', farms_path %>
