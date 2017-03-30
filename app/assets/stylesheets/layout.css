@@ -173,15 +173,11 @@ a {
        -moz-transition: all .3s ease;
          -o-transition: all .3s ease;
             transition: all .3s ease;
+            text-decoration: none;
+            border-bottom: none;
+            color: #ffffff;
 }
 
-a:hover,
-a:active,
-a:focus {
-    text-decoration: none;
-
-    border-bottom: none;
-}
 
 .body-wrapper {
     position: relative;
@@ -497,7 +493,7 @@ a:focus {
 
 .header-main .logo-wrapper .logo img {
     width: 100%;
-    max-width: 130px;
+    max-width: 250px;
 
     -webkit-transition: all .3s ease;
        -moz-transition: all .3s ease;
@@ -1358,11 +1354,11 @@ a:focus {
     display: table;
 
     width: 100%;
-    height: 100vh;
+    height: 50vh;
 
     color: #787675;
     background-color: #000205;
-    background-image: url('../images/background-full/footer.jpg');
+    background-image: url('http://i.imgur.com/6UeacAB.jpg');
     background-position: center;
     background-size: cover;
 }
@@ -1405,6 +1401,15 @@ a:focus {
     color: white;
     text-align: center;
 }
+iframe{
+   position:relative;
+  right: 390px;
+  bottom: 180px;
+}
+h3, h4 {
+  text-align: center;
+  color : #ffffff;
+}
 
 /*----------  3.2. Copyright  ----------*/
 
@@ -1424,7 +1429,7 @@ a:focus {
     font-weight: bold;
 }
 
-.hyperlink .social-footer ul {
+.hyperlink .social- ul {
     margin-bottom: 0;
 }
 
