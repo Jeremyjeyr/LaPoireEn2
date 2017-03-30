@@ -953,8 +953,6 @@ a:focus {
          -o-transform: translate3d(100%, 0, 0);
             transform: translate3d(100%, 0, 0);
 
-    background-image: url('../images/background-full/banner-6.jpg');
-    background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
@@ -1001,7 +999,6 @@ a:focus {
          -o-transform: translate3d(-100%, 0, 0);
             transform: translate3d(-100%, 0, 0);
 
-    background-image: url('../images/background-full/homepage-3.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -1362,7 +1359,6 @@ a:focus {
 
     color: #787675;
     background-color: #000205;
-    background-image: url('../images/background-full/footer.jpg');
     background-position: center;
     background-size: cover;
 }
