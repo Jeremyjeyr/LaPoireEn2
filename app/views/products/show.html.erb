@@ -1,4 +1,11 @@
 <p id="notice"><%= notice %></p>
+<h1>Nom du produit</h1>
 
-<%= link_to 'Edit', edit_product_path(@product) %> |
-<%= link_to 'Back', products_path %>
+
+<%= simple_form_for order_path do |f|%>
+  <%= f.number_field :quantity, value: 1, min: 1, max: :avalaible_stock %>
+  <%= f.submit "Ajouter au panier"%>
+<%end%>
+
+<%= link_to 'Edit', edit_farm_product_path(@product) %>
+<%= link_to 'Back', farm_products_path %>

@@ -6,9 +6,13 @@
 <p>Adresse : <%= @farm.address %></p>
 <div>
   <% @farm.products(@farm.id).each do |product| %>
-  <p><%= product.name %><p>
+  <%= link_to 'Voir le produit', farm_product_path(@farm, product) %>
+  <div>
+    <p><%= product.name %><p>
+    <img url="<%= product.image %>" alt="Image de <%= product.name %>"/>
   <%= link_to 'Modifier le produit', edit_farm_product_path(@farm, product) %>
   <%= link_to "Supprimer le produit", farm_product_path(@farm, product), method: :delete, data: { confirm: "Voulez-vous vraiment supprimer ce produit ?" } %>
+</div>
   <%end%>
 </div>
 
