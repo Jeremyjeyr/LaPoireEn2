@@ -34,7 +34,7 @@
  *    - 5.5. Gallery
  *    - 5.6. Socials
  *    - 5.7. Archives
- *   
+ *
  */
 
 /*=================================
@@ -175,7 +175,7 @@ a {
             transition: all .3s ease;
             text-decoration: none;
             border-bottom: none;
-            color: #ffffff;
+            /*color: #ffffff;*/
 }
 
 
