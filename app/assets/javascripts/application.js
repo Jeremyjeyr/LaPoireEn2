@@ -24,4 +24,4 @@
 //= require fancybox/js/jquery.fancybox-thumbs.min.js
 //= require parallax/jquery.parallax-scroll.min.js
 //= require gamba/main.js
-//= require_tree .
+
