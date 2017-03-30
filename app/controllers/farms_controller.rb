@@ -69,6 +69,7 @@ class FarmsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def farm_params
-      params.fetch(:farm, {})
+      #params.fetch(:farm, {:address,:title,:phone,:background_image,:description,:open_hours,:orders_days,:deliverys_days})
+      params.require(:farm).permit(:address,:title,:phone,:background_image,:description,:open_hours,:orders_days,:deliverys_days )
     end
 end

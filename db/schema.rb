@@ -10,21 +10,41 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170330081700) do
+ActiveRecord::Schema.define(version: 20170330092539) do
 
   create_table "farms", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.string   "address"
+    t.string   "title"
+    t.string   "phone"
+    t.string   "background_image"
+    t.text     "description"
+    t.text     "open_hours"
+    t.text     "orders_days"
+    t.text     "delivery_days"
+    t.datetime "created_at",       null: false
+    t.datetime "updated_at",       null: false
   end
 
   create_table "orders", force: :cascade do |t|
+    t.float    "total"
+    t.string   "status"
+    t.text     "message"
+    t.date     "date"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "products", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.text     "name"
+    t.text     "image"
+    t.float    "price"
+    t.string   "unit"
+    t.text     "available_in"
+    t.integer  "avalaible_stock"
+    t.integer  "real_stock"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
+    t.integer  "farm_id"
   end
 
 end
