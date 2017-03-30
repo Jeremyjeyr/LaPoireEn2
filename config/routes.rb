@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+
+	root 'static#index'
+
   resources :orders
   resources :products
   resources :farms
