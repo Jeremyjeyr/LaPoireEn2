@@ -1,0 +1,1070 @@
+/**
+ * [Table of contents]
+ *
+ * [&. Content / #key]
+ * [Let press Ctrl + f and type of paste the key, then press Enter to search the content ]
+ *
+ * Summary:
+ *
+ *  0. VARIABLE LESS
+ *    - 0.1. Color
+ *  1. RESPONSIVE SCREEN
+ *    - 1.0. Media screen min width 1600px
+ *    - 1.1. Media screen max width 1024px
+ *    - 1.2. Media screen max width 768px
+ *    - 1.3. Media screen max width 767px
+ *    - 1.4. Media screen max width 600px
+ *    - 1.5. Media screen max width 480px
+ *    - 1.6. Media screen max width 414px
+ *    - 1.7. Media screen max width 380px
+ *    - 1.8. Media screen max width 320px
+ */
+
+/*=====================================
+=            VARIABLE LESS            =
+=====================================*/
+
+/*----------  0.1. Color  ----------*/
+
+/*----------  0.2. Font  ----------*/
+
+@-webkit-keyframes spin1 {
+    0% {
+        -webkit-transform: rotate(0);
+                transform: rotate(0);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+    }
+}
+
+@keyframes spin1 {
+    0% {
+        -webkit-transform: rotate(0);
+                transform: rotate(0);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes spin2 {
+    0% {
+        -webkit-transform: rotate(72deg);
+                transform: rotate(72deg);
+    }
+    100% {
+        -webkit-transform: rotate(-288deg);
+                transform: rotate(-288deg);
+    }
+}
+
+@keyframes spin2 {
+    0% {
+        -webkit-transform: rotate(72deg);
+                transform: rotate(72deg);
+    }
+    100% {
+        -webkit-transform: rotate(-288deg);
+                transform: rotate(-288deg);
+    }
+}
+
+@-webkit-keyframes spin3 {
+    0% {
+        -webkit-transform: rotate(-144deg);
+                transform: rotate(-144deg);
+    }
+    100% {
+        -webkit-transform: rotate(216deg);
+                transform: rotate(216deg);
+    }
+}
+
+@keyframes spin3 {
+    0% {
+        -webkit-transform: rotate(-144deg);
+                transform: rotate(-144deg);
+    }
+    100% {
+        -webkit-transform: rotate(216deg);
+                transform: rotate(216deg);
+    }
+}
+
+@-webkit-keyframes spin4 {
+    0% {
+        -webkit-transform: rotate(216deg);
+                transform: rotate(216deg);
+    }
+    100% {
+        -webkit-transform: rotate(-144deg);
+                transform: rotate(-144deg);
+    }
+}
+
+@keyframes spin4 {
+    0% {
+        -webkit-transform: rotate(216deg);
+                transform: rotate(216deg);
+    }
+    100% {
+        -webkit-transform: rotate(-144deg);
+                transform: rotate(-144deg);
+    }
+}
+
+/*=====  End of VARIABLE LESS  ======*/
+
+/*=========================================
+=            RESPONSIVE SCREEN            =
+=========================================*/
+
+/*----------  1.0. Media screen min width 1600px  ----------*/
+
+@media screen and (min-width: 1600px) {
+    /********************* HOME PAGE ***********************/
+
+    .background-slide .slide-item .img-background {
+        top: -200px;
+        bottom: -200px;
+
+        height: calc(100% + 400px);
+    }
+    .background-slide .title {
+        font-size: 6rem;
+    }
+    .background-slide .subtitle {
+        font-size: 2rem;
+    }
+    .navigation .nav-links .main-menu {
+        font-size: 20px;
+    }
+    .homepage-parallax .title {
+        font-size: 6rem;
+    }
+    .homepage-parallax .subtitle {
+        font-size: 2rem;
+    }
+    /********************* PAGE 404 ***********************/
+
+    .page-404 .title {
+        font-size: 6rem;
+
+        margin-top: 8%;
+    }
+}
+
+/*----------  1.1. Media screen max width 1024px  ----------*/
+
+@media screen and (max-width: 1024px) {
+    /********************* HOME PAGE ***********************/
+
+    .about-us-wrapper .about-left,
+    .about-us-wrapper .about-right {
+        width: 30%;
+    }
+    .about-us-wrapper .about-center {
+        width: 40%;
+    }
+    .banner-1-wrapper .subtitle {
+        font-size: 2rem;
+    }
+    .banner-1-wrapper .title {
+        font-size: 4rem;
+    }
+    .slick-dots {
+        bottom: -40px;
+    }
+    .slick-dots li {
+        margin: 0;
+    }
+    .slick-dots li button:before {
+        font-size: 12px;
+
+        -webkit-transition: all .3s ease;
+           -moz-transition: all .3s ease;
+             -o-transition: all .3s ease;
+                transition: all .3s ease;
+
+        opacity: .7;
+        color: #fafafa;
+    }
+    .slick-dots li.slick-active button:before {
+        font-size: 14px;
+
+        opacity: 1;
+        color: #86bc42;
+    }
+    .list-customer-review {
+        margin: 0 -40px;
+    }
+    .list-customer-review .item {
+        padding: 0 40px;
+    }
+    .subscribe-email .subscribe-email-wrapper .subscribe-email-right {
+        float: left;
+
+        margin-top: 10px;
+    }
+    /********************* HOME PAGE 2 ***********************/
+
+    .block-icon-2 {
+        padding: 20px 10px;
+    }
+    /********************* SHOP *********************/
+
+    .topbar-control .right-bar {
+        float: left;
+
+        width: 100%;
+        margin-top: 10px;
+    }
+    .topbar-control .result-filter-wrapper + .btn-list-grid {
+        float: right;
+    }
+    /********************* ABOUT US *********************/
+
+    .tab-vertical .tab-list-wrapper {
+        display: inline-block;
+
+        width: 100%;
+        margin-bottom: 40px;
+
+        vertical-align: top;
+    }
+    .tab-vertical .tab-content {
+        display: inline-block;
+
+        width: 100%;
+        padding: 0;
+
+        vertical-align: top;
+    }
+    .tab-vertical .tab-list {
+        display: inline-block;
+
+        width: 100%;
+
+        vertical-align: top;
+    }
+    .tab-vertical .tab-list:before {
+        content: none;
+    }
+    .tab-vertical .tab-list li {
+        display: table-cell;
+
+        width: 1%;
+
+        text-align: center;
+    }
+    .tab-vertical .tab-list li:first-child {
+        text-align: left;
+    }
+    .tab-vertical .tab-list li:last-child {
+        text-align: right;
+    }
+    .tab-vertical .tab-list li:before,
+    .tab-vertical .tab-list li:after {
+        content: none;
+    }
+    .tab-vertical .tab-list li .link {
+        width: auto;
+        padding-right: 0;
+        padding-left: 40px;
+    }
+    .tab-vertical .tab-list li .link:before {
+        position: absolute;
+        z-index: 5;
+        top: 50%;
+        left: 0;
+
+        width: 10px;
+        height: 10px;
+
+        content: '';
+        -webkit-transition: all .3s ease;
+           -moz-transition: all .3s ease;
+             -o-transition: all .3s ease;
+                transition: all .3s ease;
+        -webkit-transform: translateY(-50%);
+           -moz-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+             -o-transform: translateY(-50%);
+                transform: translateY(-50%);
+
+        -webkit-border-radius: 50%;
+           -moz-border-radius: 50%;
+                border-radius: 50%;
+        background-color: #d9d9d9;
+    }
+    .tab-vertical .tab-list li .link:after {
+        position: absolute;
+        z-index: 4;
+        top: 50%;
+        left: -6px;
+
+        width: 22px;
+        height: 22px;
+
+        content: '';
+        -webkit-transition: all .3s ease;
+           -moz-transition: all .3s ease;
+             -o-transition: all .3s ease;
+                transition: all .3s ease;
+        -webkit-transform: translateY(-50%);
+           -moz-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+             -o-transform: translateY(-50%);
+                transform: translateY(-50%);
+
+        -webkit-border-radius: 50%;
+           -moz-border-radius: 50%;
+                border-radius: 50%;
+        background-color: #f3f3f3;
+    }
+    .tab-vertical .tab-list li.active .link:before {
+        background-color: #86bc42;
+    }
+    .tab-vertical .tab-list li.active .link:after {
+        background-color: #ffffff;
+        box-shadow: 0 0 20px 10px rgba(0, 0, 0, .02);
+    }
+}
+
+/*----------  1.2. Media screen max width 768px  ----------*/
+
+@media screen and (max-width: 768px) {
+    .header-main .logo-wrapper .logo img {
+        max-width: 110px;
+    }
+    .navigation .nav-links .main-menu {
+        margin: 0 18px;
+    }
+    .button-search .main-menu {
+        margin-right: 0;
+        margin-left: 18px;
+    }
+    .sidebar {
+        margin-top: 100px;
+    }
+    .sidebar .col-1 {
+        width: 100%;
+    }
+    .sidebar .col-2 {
+        float: left;
+
+        width: 50%;
+    }
+    .sidebar .col-2 .widget:last-child {
+        margin-bottom: 0;
+    }
+    .sidebar .col-2:nth-child(even) {
+        padding-right: 15px;
+    }
+    .sidebar .col-2:nth-child(odd) {
+        padding-left: 15px;
+    }
+    .main-right {
+        float: left;
+    }
+    .padding-top-100 {
+        padding-top: 80px;
+    }
+    .padding-bottom-100 {
+        padding-bottom: 80px;
+    }
+    .margin-top-70 {
+        margin-top: 60px;
+    }
+    .margin-top-50 {
+        margin-top: 40px;
+    }
+    .sidebar {
+        margin-top: 80px;
+    }
+    .sidebar .widget {
+        margin-bottom: 40px;
+    }
+    /********************* HOME PAGE ***********************/
+
+    .main-titles .title {
+        font-size: 3rem;
+
+        margin-bottom: 60px;
+    }
+    .background-slide .title {
+        font-size: 3.75rem;
+    }
+    .about-us-wrapper .about-left {
+        width: auto;
+        margin: 0 -15px;
+        padding-right: 0;
+    }
+    .about-us-wrapper .about-center {
+        display: block;
+        float: none;
+
+        width: 60%;
+        margin: 0 auto;
+
+        text-align: center;
+    }
+    .about-us-wrapper .about-right {
+        width: auto;
+        margin: 0 -15px;
+        padding-left: 0;
+    }
+    .about-us-wrapper .block-icon-1 {
+        float: left;
+
+        width: 50%;
+        margin-bottom: 0;
+        padding: 0 15px;
+    }
+    .grid-block-3 .grid-left {
+        display: block;
+
+        width: auto;
+        padding-right: 0;
+    }
+    .grid-block-3 .grid-right {
+        display: block;
+
+        width: 100%;
+        margin-top: 30px;
+    }
+    .grid-block-2 .grid-1,
+    .grid-block-2 .grid-2 {
+        width: 50%;
+    }
+    .grid-block-1 .block-left,
+    .grid-block-1 .block-right {
+        width: 100%;
+    }
+    .grid-block-1 .block-right .grid-item:first-child {
+        margin-top: 30px;
+    }
+    .gallery-grid .grid-item {
+        width: 50%;
+    }
+    .block-2 .block-image {
+        width: 200px;
+    }
+    .block-2 .block-image:before {
+        padding-top: 80px;
+    }
+    .block-3.style-2 .block-content,
+    .block-3.style-2 .block-image {
+        display: block;
+
+        width: 100%;
+    }
+    .block-3.style-2 .block-content {
+        padding: 30px;
+    }
+    .block-3 .block-content {
+        padding: 30px;
+    }
+    .footer-wrapper .col-2 {
+        display: inline-block;
+
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .footer-wrapper .col-2:last-child {
+        margin-bottom: 0;
+    }
+    .blog-detail-content .content .tags {
+        margin-top: 30px;
+    }
+    /******************** HOME PAGE 2 **********************/
+
+    .block-icon-2 {
+        padding: 20px;
+    }
+    .about-us .col-md-3.col-xs-6 {
+        margin-top: 30px;
+    }
+    .about-us .col-md-3.col-xs-6:nth-child(-n + 2) {
+        margin-top: 0;
+    }
+    .gallery-grid-2 .grid-item {
+        width: 50%;
+    }
+    .gallery-grid-2 .grid-item:before {
+        padding-top: 80%;
+    }
+    .gallery-grid-2 .grid-item.grid-item-width-2 {
+        width: 100%;
+    }
+    .gallery-grid-2 .grid-item.grid-item-width-2:before {
+        padding-top: 40%;
+    }
+    .gallery-grid-2 .grid-item.grid-item-height-2:before {
+        padding-top: 160%;
+    }
+    .gallery-grid-2 .grid-item.grid-item-width-2.grid-item-height-2 {
+        width: 50%;
+    }
+    .gallery-grid-2 .grid-item.grid-item-width-2.grid-item-height-2:before {
+        padding-top: 80%;
+    }
+    .banner-3 {
+        position: relative;
+
+        display: block;
+
+        padding: 80px 50px;
+    }
+    .banner-3 .left-image {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+
+        display: block;
+
+        width: 100%;
+    }
+    .banner-3 .right-infomation {
+        position: relative;
+        z-index: 2;
+
+        display: block;
+
+        width: 100%;
+    }
+    .banner-3 .content-wrapper .title {
+        font-size: 2rem;
+    }
+    /********************* ABOUT US *********************/
+
+    .tab-vertical .text-content,
+    .tab-vertical .text-image {
+        width: 100%;
+        padding-left: 0;
+    }
+    .tab-vertical .text-content {
+        padding-bottom: 30px;
+    }
+}
+
+/*----------  1.3. Media screen max width 767px  ----------*/
+
+@media screen and (max-width: 767px) {
+    html {
+        font-size: 14px;
+    }
+    .padding-top-100 {
+        padding-top: 60px;
+    }
+    .padding-bottom-100 {
+        padding-bottom: 60px;
+    }
+    .margin-top-70 {
+        margin-top: 50px;
+    }
+    .margin-bottom-70 {
+        margin-bottom: 50px;
+    }
+    .margin-top-50 {
+        margin-top: 30px;
+    }
+    .sidebar {
+        margin-top: 60px;
+    }
+    .sidebar .widget {
+        margin-bottom: 30px;
+    }
+    /********************* MENU ***********************/
+
+    .header-main .navigation {
+        display: none;
+    }
+    .header-main.header-fixed .hamburger-menu-mobile .icons,
+    .header-main.header-fixed .button-search-mobile .icons {
+        line-height: 50px;
+    }
+    .hamburger-menu-mobile,
+    .button-search-mobile {
+        display: block;
+    }
+    .header-main-wrapper {
+        position: relative;
+    }
+    .logo-wrapper {
+        position: absolute;
+        left: 50%;
+
+        margin-left: -55px;
+    }
+    .homepage-banner,
+    .background-slide .slide-item {
+        min-height: 667px;
+    }
+    /********************* HOME PAGE ***********************/
+
+    .banner {
+        background-attachment: scroll;
+    }
+    .homepage-banner-content {
+        padding-top: 100px;
+    }
+    .about-us-wrapper .about-left {
+        margin-bottom: 30px;
+    }
+    .about-us-wrapper .about-center {
+        display: none;
+    }
+    .main-titles .title {
+        margin-bottom: 50px;
+    }
+    .banner-1 {
+        height: 400px;
+    }
+    .banner-1 .img-bg-2 {
+        display: none;
+    }
+    .banner-1-wrapper {
+        padding: 30px;
+    }
+    .banner-1-wrapper .subtitle {
+        font-size: 1.8rem;
+    }
+    .banner-1-wrapper .title {
+        font-size: 3rem;
+    }
+    .banner-2 {
+        height: 400px;
+    }
+    .banner-texxt-wrapper .title {
+        font-size: 2.8rem;
+        line-height: 1.4;
+    }
+    .banner-texxt-wrapper .subtitle {
+        font-size: 2rem;
+    }
+    .banner-texxt-wrapper .prices .text-1 {
+        font-size: 4rem;
+    }
+    .banner-texxt-wrapper .prices .text-2 {
+        font-size: 2rem;
+    }
+    .footer {
+        display: block;
+
+        width: auto;
+        height: auto;
+    }
+    .footer .footer-wrapper {
+        padding: 150px 0 100px 0;
+    }
+    /********************* HOME PAGE 2 ***********************/
+
+    .banner-3 {
+        padding: 60px 50px;
+    }
+    /********************* HOME PAGE 3 ***********************/
+
+    .position-center {
+        display: inline-block;
+        float: none;
+
+        margin: 30px auto 0 auto;
+    }
+    .banner-5 {
+        height: auto;
+        padding: 60px 0;
+    }
+    .banner-5:before {
+        content: none;
+    }
+    .banner-5 .wrapper-banner {
+        -webkit-transform: translate(0) !important;
+           -moz-transform: translate(0) !important;
+            -ms-transform: translate(0) !important;
+             -o-transform: translate(0) !important;
+                transform: translate(0) !important;
+    }
+    /********************* HOME PAGE 3 ***********************/
+
+    .contact-method .col-xs-12 {
+        margin-top: 30px;
+    }
+    .contact-method .col-xs-12:first-child {
+        margin-top: 0;
+    }
+}
+
+/*----------  1.4. Media screen max width 600px  ----------*/
+
+@media screen and (max-width: 600px) {
+    .header-topbar .topbar-right {
+        display: none;
+    }
+    .header-topbar .topbar-left > li {
+        padding: 0 10px;
+    }
+    .sidebar .col-1 {
+        width: 100%;
+    }
+    .sidebar .col-2 {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .sidebar .col-2:last-child {
+        margin-bottom: 0;
+    }
+    .sidebar .col-2:nth-child(even) {
+        padding-right: 0;
+    }
+    .sidebar .col-2:nth-child(odd) {
+        padding-left: 0;
+    }
+    /********************* HOME PAGE ***********************/
+
+    .list-customer-review {
+        margin: 0 -30px;
+    }
+    .list-customer-review .item {
+        padding: 0 30px;
+    }
+    .grid-block-2 .grid-1,
+    .grid-block-2 .grid-2 {
+        width: 100%;
+    }
+    /********************* HOME PAGE 2 ***********************/
+
+    .gallery-grid-3 .grid-item {
+        width: 100%;
+    }
+    .banner-3 .content-wrapper {
+        padding: 0 15px;
+    }
+    .banner-3 .content-wrapper .title {
+        font-size: 1.6rem;
+    }
+    .banner-3 .content-wrapper .title .special {
+        font-size: 2rem;
+    }
+    /********************* HOME PAGE 3 ***********************/
+
+    .about-us .block-video:before {
+        display: block;
+
+        padding-top: 60%;
+
+        content: '';
+    }
+}
+
+/*----------  1.5. Media screen max width 480px  ----------*/
+
+@media screen and (max-width: 480px) {
+    /********************* HOME PAGE ***********************/
+
+    .group-btn .btn-left {
+        display: block;
+
+        margin: 0 auto;
+        margin-bottom: 15px;
+    }
+    .group-btn .btn-right {
+        display: block;
+
+        margin: 0 auto !important;
+    }
+    .group-btn .btn {
+        display: block;
+
+        margin: 0 auto;
+        margin-bottom: 15px;
+    }
+    .group-btn .btn + .btn {
+        margin: 0 auto !important;
+    }
+    .background-slide .title {
+        font-size: 3rem;
+    }
+    .about-us-wrapper .block-icon-1 {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .about-us-wrapper .block-icon-1:last-child {
+        margin-bottom: 0;
+    }
+    .list-customer-review .item {
+        padding: 0 70px;
+    }
+    .banner-2 {
+        height: 500px;
+    }
+    .block-2 .block-image {
+        display: block;
+
+        width: 100%;
+    }
+    .block-2 .block-image:before {
+        padding-top: 58%;
+    }
+    .block-2 .block-content {
+        display: block;
+    }
+    .subscribe-email .subscribe-email-wrapper {
+        padding: 30px 15px;
+    }
+    .gallery-grid .grid-item {
+        width: 100%;
+    }
+    .footer-wrapper .col-2 .col-md-3 {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .footer-wrapper .col-2 .col-md-3:last-child {
+        margin-bottom: 0;
+    }
+    .footer-wrapper .widget .content-widget {
+        margin-top: 20px;
+    }
+    .hyperlink {
+        text-align: center;
+    }
+    .hyperlink .pull-left,
+    .hyperlink .pull-right {
+        float: none !important;
+    }
+    .hyperlink .pull-left + .pull-right {
+        margin-top: 10px;
+    }
+    /********************* HOME PAGE 2 ***********************/
+
+    .homepage-parallax .title {
+        font-size: 3rem;
+    }
+    .block-icon-2 {
+        padding: 20px 15px;
+    }
+    /********************* HOME PAGE 3 ***********************/
+
+    .position-center {
+        float: left;
+
+        margin: 0;
+    }
+    .about-us .col-sm-4.col-xs-6 {
+        width: 100%;
+        margin-top: 30px;
+    }
+    .about-us .col-sm-4.col-xs-6:first-child {
+        margin-top: 0;
+    }
+    .banner-5 .col-sm-4.col-xs-6 {
+        width: 100%;
+        margin-top: 30px;
+    }
+    .banner-5 .col-sm-4.col-xs-6:first-child {
+        margin-top: 0;
+    }
+    /********************* BLOG ***********************/
+
+    .blog-author {
+        text-align: center;
+
+        background-color: #f9f9f9;
+    }
+    .blog-author .media-left {
+        display: inline-block;
+
+        width: auto;
+        padding: 20px;
+
+        vertical-align: top;
+    }
+    .blog-author .media-right {
+        display: block;
+
+        width: 100%;
+        padding: 0;
+    }
+    .blog-author .media-right:before {
+        display: none;
+    }
+    .blog-detail-wrapper .block-video:before {
+        padding-top: 60%;
+    }
+    .blog-comment .comment-list .parent {
+        margin-bottom: 20px;
+        padding: 20px;
+
+        background-color: #f9f9f9;
+    }
+    .blog-comment .comment-list .comment-list-children {
+        margin-left: 0;
+    }
+    .blog-comment .comment-list .comment-item:not(:last-child) {
+        margin-bottom: 20px;
+    }
+    .leave-comment {
+        margin-top: 50px;
+    }
+    .leave-comment .comment-form .col-50 {
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 0 !important;
+    }
+    .leave-comment .comment-form .col-50:last-child {
+        margin-bottom: 0;
+    }
+    /********************* BLOG LIST ***********************/
+
+    .topbar-control .result-filter-wrapper + .btn-list-grid {
+        float: left;
+
+        margin-top: 10px;
+        margin-left: 0;
+    }
+    .topbar-control {
+        padding: 15px;
+    }
+    .topbar-control .result-filter-wrapper .selection-bar .select-wrapper {
+        width: 125px;
+    }
+    .list-block.column-2 .item:nth-child(-n + 2) {
+        margin-top: 30px;
+    }
+    .list-block.column-2 .item:first-child {
+        margin-top: 0;
+    }
+    .list-block.column-2 > .item {
+        width: 100%;
+        margin-top: 30px;
+    }
+    .blog-masonry .item {
+        width: 100%;
+    }
+    .blog-masonry .item:nth-child(-n + 2) {
+        margin-top: 30px;
+    }
+    .blog-masonry .item:first-child {
+        margin-top: 0;
+    }
+    .blog-masonry > .item {
+        width: 100%;
+        margin-top: 30px;
+    }
+    .block-6 .block-image,
+    .block-6 .block-content {
+        display: block;
+    }
+    .block-6 .block-image {
+        width: 100%;
+        max-width: none;
+
+        border-right: none;
+        border-bottom: 1px solid #ededed;
+    }
+    .block-1 .block-blockquote .img-full {
+        height: auto;
+    }
+    /********************* CONTACT ***********************/
+
+    .contact-method .method-item {
+        padding: 30px 0;
+    }
+    .contact-method .method-item i {
+        margin-bottom: 30px;
+    }
+    .contact-method .method-item .sub {
+        margin-bottom: 20px;
+    }
+    /********************* ABOUT US *********************/
+
+    .tab-vertical .tab-list-wrapper {
+        margin-bottom: 30px;
+    }
+    .tab-vertical .tab-list li {
+        display: block;
+
+        width: 100%;
+
+        text-align: left !important;
+    }
+    .tab-vertical .tab-list li + li {
+        margin-top: 15px;
+    }
+}
+
+/*----------  1.6. Media screen max width 414px  ----------*/
+
+@media screen and (max-width: 414px) {
+    /********************* HOME PAGE ***********************/
+
+    .main-titles .title {
+        font-size: 2.5rem;
+
+        margin-bottom: 40px;
+    }
+    /********************* HOME PAGE 2 ***********************/
+
+    .about-us .col-md-3.col-xs-6 {
+        width: 100%;
+    }
+    .about-us .col-md-3.col-xs-6:nth-child(-n + 2) {
+        margin-top: 30px;
+    }
+    .about-us .col-md-3.col-xs-6:first-child {
+        margin-top: 0;
+    }
+    .banner-3 {
+        padding: 60px 15px;
+    }
+    .block-2 .block-content,
+    .block-1 .block-content {
+        padding: 20px 15px;
+    }
+    /********************* HOME PAGE 2 ***********************/
+
+    .topbar-control .result-filter-wrapper .selection-bar {
+        float: left;
+
+        margin-top: 10px;
+    }
+}
+
+/*----------  1.7. Media screen max width 380px  ----------*/
+
+@media screen and (max-width: 380px) {
+    /********************* HOME PAGE 2 ***********************/
+
+    .gallery-grid-2 .grid-item {
+        width: 100%;
+    }
+    .gallery-grid-2 .grid-item:before {
+        padding-top: 80%;
+    }
+    .gallery-grid-2 .grid-item.grid-item-width-2 {
+        width: 100%;
+    }
+    .gallery-grid-2 .grid-item.grid-item-width-2:before {
+        padding-top: 40%;
+    }
+    .gallery-grid-2 .grid-item.grid-item-height-2:before {
+        padding-top: 160%;
+    }
+    .gallery-grid-2 .grid-item.grid-item-width-2.grid-item-height-2 {
+        width: 100%;
+    }
+    .gallery-grid-2 .grid-item.grid-item-width-2.grid-item-height-2:before {
+        padding-top: 80%;
+    }
+}
+
+/*----------  1.8. Media screen max width 320px  ----------*/
+
+@media screen and (max-width: 320px) {
+    /********************* HOME PAGE ***********************/
+}
