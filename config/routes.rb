@@ -2,6 +2,7 @@ Rails.application.routes.draw do
 
   devise_for :users
   root 'pages#home'
+  get 'contact' => 'pages#contact'
 
   resources :orders
   resources :farms do
