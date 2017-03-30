@@ -37,6 +37,13 @@ ActiveRecord::Schema.define(version: 20170330214057) do
     t.string   "content"
   end
 
+  create_table "orders_products", id: false, force: :cascade do |t|
+    t.integer "product_id"
+    t.integer "order_id"
+    t.index ["order_id"], name: "index_orders_products_on_order_id"
+    t.index ["product_id"], name: "index_orders_products_on_product_id"
+  end
+
   create_table "products", force: :cascade do |t|
     t.text     "name"
     t.text     "image"
@@ -49,13 +56,6 @@ ActiveRecord::Schema.define(version: 20170330214057) do
     t.datetime "updated_at",      null: false
     t.integer  "farm_id"
     t.integer  "quantity"
-  end
-
-  create_table "products_orders", id: false, force: :cascade do |t|
-    t.integer "product_id"
-    t.integer "order_id"
-    t.index ["order_id"], name: "index_products_orders_on_order_id"
-    t.index ["product_id"], name: "index_products_orders_on_product_id"
   end
 
   create_table "users", force: :cascade do |t|
