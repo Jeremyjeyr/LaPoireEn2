@@ -90,12 +90,20 @@
                                     </li>
                                 </ul>
                                 <ul class="topbar-right list-unstyled list-inline style-2">
+                                  <% if user_signed_in? %>
                                     <li>
-                                        <a href="#" class="link"> <i class="icons-2 fa fa-user"></i><span>mon compte</span></a>
+                                      <a href="<%= edit_user_registration_path %>" class="link"> <i class="icons-2 fa fa-user"></i><span>Mon compte : <%= current_user.email %></span></a>
                                     </li>
+                                    <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
+                                  <% else %>
                                     <li>
-                                        <a href="#" class="link"> <i class="icons-2 fa fa-cart-plus"></i><span class="cart-counter">1</span></a>
+                                      <a href="<%= new_user_registration_path %>" class="link"> <i class="icons-2 fa fa-user"></i><span>S'enregistrer</span></a>
                                     </li>
+                                    <a href="<%= new_user_session_path %>" > <i class="icons-2 fa fa-user"></i><span>Se connecter</span></a>
+                                  <% end %>
+                                  <li>
+                                      <a href="#" class="link"> <i class="icons-2 fa fa-cart-plus"></i><span class="cart-counter">1</span></a>
+                                  </li>
                                 </ul>
                             </div>
                         </div>
