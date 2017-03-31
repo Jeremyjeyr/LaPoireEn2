@@ -5,37 +5,32 @@
         </div>
     </div>
 </section>
-<section class="banner customer-review padding-top-100 padding-bottom-100">
-  
+<section class="page-main padding-top-100 padding-bottom-100">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-xs-12 main-left">
+            <div class="list-block column-1">
+              <% @farms.each do |farm| %>
+                <div class="item">
+                    <div class="block-6">
+                        <div class="block-image"><img src="<%=farm.background_image%>" alt="" class="img-full">
+                            <%= link_to farm do%> <% end%>
+                        </div>
+                        <div class="block-content"><%= link_to farm.title, farm, class: "title"%>
+                            <p class="description"><%= farm.address %><br><%= farm.phone %></p>
+                            <ul class="list-icons">
+                                <li><%= link_to edit_farm_path(farm), class: "link" do%><i class="icons fa fa-pencil"></i><% end%></li>
+                                <li><%= link_to farm, method: :delete, data: { confirm: 'Vous êtes sûr ?' }, class: "link" do %><i class="icons fa fa-times"></i><% end%></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+              <% end%>
+            </div>
+        </div>
+    </div>
+</div>
 </section>
-
-
-<h1>Farms</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th>Nom de la ferme</th>
-      <th>Adresse de la ferme</th>
-      <th>Numéro de téléphone de la ferme</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @farms.each do |farm| %>
-      <tr>
-        <td><%= farm.title %></td>
-        <td><%= farm.address %></td>
-        <td><%= farm.phone %></td>
-        <td><%= link_to 'Show', farm %></td>
-        <td><%= link_to 'Edit', edit_farm_path(farm) %></td>
-        <td><%= link_to 'Destroy', farm, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
 <br>
 
 <%= link_to 'New Farm', new_farm_path %>
