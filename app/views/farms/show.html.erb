@@ -16,7 +16,7 @@
                                     <div class="item">
                                       <div class="block-4">
                                           <div class="block-image">><img width="358" src="<%= product.image %>" alt="Image de <%= product.name %>" class="img-full">
-                                            <a href="<%= edit_farm_product_path(@farm, product) %>" class="link"></a>
+                                            <%= link_to farm_product_path(@farm, product), class: "link" do%><% end%>
                                           </div>
                                           <div class="block-content"><a href="<%= farm_product_path(@farm, product)%>" class="title"><%= product.name %></a>
                                             <div class="prices-wrapper">
@@ -24,7 +24,7 @@
                                             </div>
                                                 <ul class="list-icons">
                                                   <li><%= link_to farm_product_path(@farm, product), method: :delete, data: { confirm: "Voulez-vous vraiment supprimer ce produit ?" }, class: "link" do%> <i class="icons fa fa-times"></i> <%end%></li>
-                                                  <li><%= link_to farm_product_path(@farm, product), class: "link" do%> <i class="icons fa fa-pencil"></i> <%end%></li>
+                                                  <li><%= link_to edit_farm_product_path(@farm, product), class: "link" do%> <i class="icons fa fa-pencil"></i> <%end%></li>
                                                   <li><%= link_to farm_product_path(@farm, product), class: "link" do%> <i class="icons fa fa-cart-plus"></i> <%end%></li>
                                                 </ul>
                                             </div>
