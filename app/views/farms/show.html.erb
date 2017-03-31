@@ -15,7 +15,7 @@
                                     <% @farm.products(@farm.id).each do |product| %>
                                     <div class="item">
                                       <div class="block-4">
-                                          <div class="block-image">><img src="<%= product.image %>" alt="Image de <%= product.name %>" class="img-full">
+                                          <div class="block-image">><img width="358" src="<%= product.image %>" alt="Image de <%= product.name %>" class="img-full">
                                             <a href="<%= edit_farm_product_path(@farm, product) %>" class="link"></a>
                                           </div>
                                           <div class="block-content"><a href="<%= farm_product_path(@farm, product)%>" class="title"><%= product.name %></a>
