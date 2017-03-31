@@ -1,4 +1,10 @@
-<h2>Log in</h2>
+<section class="banner shop" style="background-image: url('http://i.imgur.com/qnH1Efi.jpg')" >
+    <div class="container">
+        <div class="morepage-banner">
+            <h2 class="title">Se connecter</h2>
+        </div>
+    </div>
+</section>
 
 <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
   <div class="form-inputs">
@@ -11,5 +17,3 @@
     <%= f.button :submit, "Log in" %>
   </div>
 <% end %>
-
-<%= render "users/shared/links" %>

@@ -653,7 +653,7 @@
     padding: 30px 20px;
 
     background-color: rgba(0, 0, 0, .92);
-    background-image: url('../images/news/image-7.jpg');
+    /*background-image: url('../images/news/image-7.jpg');*/
 }
 
 .block-1 .block-video:before {
@@ -2775,10 +2775,8 @@
 
 .banner-2 {
     overflow: hidden;
-
     height: 520px;
 
-    /*background-image: url('../images/background-full/banner-3.jpg');*/
 }
 
 .banner-texxt-wrapper {
@@ -3554,7 +3552,7 @@
     cursor: pointer;
 
     opacity: 0;
-    background-image: url('../images/more-image/btn-closevideo.png');
+    /*background-image: url('../images/more-image/btn-closevideo.png');*/
 }
 
 .block-video .video-embed {
@@ -3907,7 +3905,7 @@
 /*----------  2.5. Shop grid  ----------*/
 
 .shop {
-    background-image: url('../images/background-full/header 2.jpg');
+    /*background-image: url('../images/background-full/header 2.jpg');*/
 }
 
 .list-block {
@@ -4838,7 +4836,7 @@
 
     text-align: center;
 
-    background-image: url('../images/background-full/404.jpg');
+    /*background-image: url('../images/background-full/404.jpg');*/
     background-position: center;
     background-size: cover;
 }
