@@ -11,7 +11,12 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
+  <body><% if notice %>
+    <p class="alert alert-success"><%= notice %></p>
+  <% end %>
+  <% if alert %>
+    <p class="alert alert-danger"><%= alert %></p>
+  <% end %>
         <div class="body-wrapper">
             <div class="wrapper-menu-mobile-background"></div>
             <div class="wrapper-menu-mobile">
