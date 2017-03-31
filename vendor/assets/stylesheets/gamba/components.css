@@ -2778,7 +2778,7 @@
 
     height: 520px;
 
-    background-image: url('../images/background-full/banner-3.jpg');
+    /*background-image: url('../images/background-full/banner-3.jpg');*/
 }
 
 .banner-texxt-wrapper {
@@ -3305,7 +3305,7 @@
 }
 
 .customer-review-2 {
-    background-image: url('../images/background-full/banner-4.jpg');
+    /*background-image: url('../images/background-full/banner-4.jpg');*/
 }
 
 .list-customer-review-2 {
@@ -3405,7 +3405,7 @@
 
     vertical-align: top;
 
-    background-image: url('../images/background-full/banner-5.jpg');
+    /*background-image: url('../images/background-full/banner-5.jpg');*/
 }
 
 .banner-3 .right-infomation {
@@ -3472,7 +3472,7 @@
 
     height: 520px;
 
-    background-image: url('../images/background-full/banner-6.jpg');
+    /*background-image: url('../images/background-full/banner-6.jpg');*/
 }
 
 .block-video {
@@ -3604,7 +3604,7 @@
 
     height: 620px;
 
-    background-image: url('../images/background-full/banner-7.jpg');
+    /*background-image: url('../images/background-full/banner-7.jpg');*/
 }
 
 .banner-5:before {
@@ -3704,7 +3704,7 @@
 }
 
 .about {
-    background-image: url('../images/background-full/banner-8.jpg');
+    /*background-image: url('../images/background-full/banner-8.jpg');*/
 }
 
 .tab-vertical {
@@ -4125,13 +4125,13 @@
 /*----------  2.6. Shop list  ----------*/
 
 .shop-list {
-    background-image: url('../images/background-full/banner-10.jpg');
+    /*background-image: url('../images/background-full/banner-10.jpg');*/
 }
 
 /*----------  2.7. Blog  ----------*/
 
 .blog {
-    background-image: url('../images/background-full/banner-11.jpg');
+    /*background-image: url('../images/background-full/banner-11.jpg');*/
 }
 
 .blog-masonry {
@@ -4205,7 +4205,7 @@
 /*----------  2.8. Blog Detail  ----------*/
 
 .blog-detail {
-    background-image: url('../images/background-full/banner-12.jpg');
+    /*background-image: url('../images/background-full/banner-12.jpg');*/
 }
 
 .blog-detail-wrapper .image-wrapper {
@@ -4730,9 +4730,9 @@
 
 /*----------  2.9. Contact   ----------*/
 
-.contact {
+/*.contact {
     background-image: url('../images/background-full/banner-13.jpg');
-}
+}*/
 
 .contact-method .method-item {
     position: relative;
