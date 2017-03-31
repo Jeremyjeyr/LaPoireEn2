@@ -1,6 +1,6 @@
 class ProductsController < ApplicationController
   before_action :set_product, only: [:show, :edit, :update, :destroy]
-  before_action :set_farm
+  before_action :set_farm, only: [:show]
   # GET /products
   # GET /products.json
   def index
@@ -10,11 +10,13 @@ class ProductsController < ApplicationController
   # GET /products/1
   # GET /products/1.json
   def show
+    # @farm = @product.farm
   end
 
   # GET /products/new
   def new
     @product = Product.new
+
   end
 
   def add_to
