@@ -24,8 +24,8 @@
                                                 <div class="prices"><sup>$</sup><span class="number"><%= product.price %></span></div><span class="unit">/<%= product.unit %></span>
                                             </div>
                                                 <ul class="list-icons">
-                                                  <li><%= link_to 'M', edit_farm_product_path(@farm, product), class: "link" %></li>
                                                   <li><%= link_to "X", farm_product_path(@farm, product), method: :delete, data: { confirm: "Voulez-vous vraiment supprimer ce produit ?" }, class: "link" %></li>
+                                                  <li><%= link_to 'M', edit_farm_product_path(@farm, product), class: "link" %></li>
                                                 </ul>
                                             </div>
                                         </div>
