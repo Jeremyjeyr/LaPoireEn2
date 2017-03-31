@@ -1,4 +1,19 @@
-<p id="notice"><%= notice %></p>
+<section class="banner shop" style="background-image: url(<%= @farm.background_image %>);">
+    <div class="container">
+        <div class="morepage-banner">
+            <h2 class="title"><%= @farm.title %></h2>
+        </div>
+        <p><%= @farm.description%><p>
+        <p>Numéro de téléphone : <%= @farm.phone %></p>
+        <p>Adresse : <%= @farm.address %></p>
+    </div>
+</section>
+
+<ul>
+<% @products.each do |product| %>
+  <li><%= product %> (1 <%= product.unit %>)</li>
+<% end %>
+</ul>
 
 <%= link_to 'Edit', edit_order_path(@order) %> |
 <%= link_to 'Back', orders_path %>

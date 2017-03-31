@@ -10,6 +10,9 @@ class OrdersController < ApplicationController
   # GET /orders/1
   # GET /orders/1.json
   def show
+    @farm = @order.farm
+    @user = @order.user
+    @products = @order.products
   end
 
   # GET /orders/new
@@ -69,6 +72,7 @@ class OrdersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def order_params
-      params.fetch(:order, {:total, :user_id, :farm_id, :status, :created_at})
+      #params.fetch(:order, {:total, :user_id, :farm_id, :status, :created_at})
+      params.require(:order).permit(:total,:user_id,:farm_id,:status,:created_at)
     end
 end

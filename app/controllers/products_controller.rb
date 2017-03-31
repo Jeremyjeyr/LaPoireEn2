@@ -1,6 +1,6 @@
 class ProductsController < ApplicationController
   before_action :set_product, only: [:show, :edit, :update, :destroy]
-  before_action :set_farm
+  before_action :set_farm, only: [:show]
   # GET /products
   # GET /products.json
   def index
@@ -10,6 +10,7 @@ class ProductsController < ApplicationController
   # GET /products/1
   # GET /products/1.json
   def show
+    # @farm = @product.farm
   end
 
   # GET /products/new
@@ -17,14 +18,15 @@ class ProductsController < ApplicationController
     @product = Product.new
   end
 
-  def add_to
-    @this_product = Product.find(params[:id])
-    @order = Order.new
-    @order.user = current_user
-    @order.farm = @this_product.farm
-    @order.content = @this_product.name + " x" + @this_product.quantity.to_s
-    @order.save
-    redirect_to @order
+  def order
+    if current_user.nil?
+      redirect_to new_user_registration_path
+    else
+      @product = Product.find params[:id]
+      @quantity = params[:quantity].to_i
+      @order = current_user.add_to_order @product, @quantity
+      redirect_to @order
+    end
   end
 
   # GET /products/1/edit
