@@ -7,7 +7,7 @@ Rails.application.routes.draw do
 
   resources :orders
   resources :farms do
-    post "/products/:id" => "products#order" , as: :order_product
+    post "/products/:id/" => "products#order" , as: :order_product
     resources :products
   end
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
