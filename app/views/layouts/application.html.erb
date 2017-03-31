@@ -71,7 +71,7 @@
                                     </li>
                                     <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
                                     <li>
-                                      <a href="#" class="link"> <i class="icons-2 fa fa-cart-plus"></i><span class="cart-counter"><%= current_user.count_products_in_orders %></span></a>
+                                      <a href="/orders/<%=current_user.id + 1%>" class="link"> <i class="icons-2 fa fa-cart-plus"></i><span class="cart-counter"><%= current_user.count_products_in_orders %></span></a>
                                     </li>
                                   <% else %>
                                     <li>
