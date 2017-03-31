@@ -1,5 +1,4 @@
-<p id="notice"><%= notice %></p>
-                    <section class="banner shop">
+                   <section class="banner shop">
                         <div class="container">
                             <div class="morepage-banner">
                                 <h2 class="title"><%= @farm.title %></h2>
@@ -24,8 +23,9 @@
                                                 <div class="prices"><sup>$</sup><span class="number"><%= product.price %></span></div><span class="unit">/<%= product.unit %></span>
                                             </div>
                                                 <ul class="list-icons">
-                                                  <li><%= link_to "X", farm_product_path(@farm, product), method: :delete, data: { confirm: "Voulez-vous vraiment supprimer ce produit ?" }, class: "link" %></li>
-                                                  <li><%= link_to 'M', edit_farm_product_path(@farm, product), class: "link" %></li>
+                                                  <li><%= link_to farm_product_path(@farm, product), method: :delete, data: { confirm: "Voulez-vous vraiment supprimer ce produit ?" }, class: "link" do%> <i class="icons fa fa-times"></i> <%end%></li>
+                                                  <li><%= link_to edit_farm_product_path(@farm, product), class: "link" do%> <i class="icons fa fa-pencil"></i> <%end%></li>
+                                                  <li><%= link_to farm_product_path(@farm, product), class: "link" do%> <i class="icons fa fa-cart-plus"></i> <%end%></li>
                                                 </ul>
                                             </div>
                                         </div>
