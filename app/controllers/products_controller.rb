@@ -16,17 +16,17 @@ class ProductsController < ApplicationController
   # GET /products/new
   def new
     @product = Product.new
-
   end
 
-  def add_to
-    @this_product = Product.find(params[:id])
-    @order = Order.new
-    @order.user = current_user
-    @order.farm = @this_product.farm
-    @order.content = @this_product.name + " x" + @this_product.quantity.to_s
-    @order.save
-    redirect_to @order
+  def order
+    if current_user.nil?
+      redirect_to new_user_registration_path
+    else
+      @product = Product.find params[:id]
+      @quantity = params[:quantity].to_i
+      @order = current_user.add_to_order @product, @quantity
+      redirect_to @order
+    end
   end
 
   # GET /products/1/edit

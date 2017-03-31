@@ -6,11 +6,14 @@
     </div>
 </section>
 
+<img src="<%=@product.image%>" />
 
-<%= simple_form_for farm_add_product_path(@farm.id, @product.id) do |f|%>
-    <%= f.number_field :quantity, value: 1, min: 1, max: :avalaible_stock %>
-    <%= f.submit "Ajouter au panier"%>
-<%end%>
+<%= form_tag(farm_order_product_path(@farm.id, @product.id), method: "post") do %>
+  <%= label_tag(:quantity, "Quantité:") %>
+  <%= number_field(nil, :quantity, value: 1) %>
+  <%= @product.unit %>
+  <%= submit_tag("Ajouter au panier") %>
+<% end %>
 
  <%= link_to 'Edit', edit_farm_product_path(@product) %>
  <%= link_to 'Back', farm_products_path %>

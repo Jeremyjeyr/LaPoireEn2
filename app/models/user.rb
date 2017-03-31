@@ -23,5 +23,23 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
-         has_and_belongs_to_many :orders
+  has_many :orders
+
+  def add_to_order(product, quantity)
+    order = current_order(product.farm)
+    quantity.times { order.products << product }
+    order
+  end
+
+  def count_products_in_orders
+    count = 0
+    orders.each do |order|
+      count += order.products.count
+    end
+    count
+  end
+
+  def current_order(farm)
+    Order.where(user: self, farm: farm).first_or_create
+  end
 end
