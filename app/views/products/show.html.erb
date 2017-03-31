@@ -5,9 +5,8 @@
         </div>
     </div>
 </section>
-
-<img src="<%=@product.image%>" />
-
+<img width="500px" src="<%=@product.image%>" />
+</div>
 <%= form_tag(farm_order_product_path(@farm.id, @product.id), method: "post") do %>
   <%= label_tag(:quantity, "Quantité:") %>
   <%= number_field(nil, :quantity, value: 1) %>
